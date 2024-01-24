@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  background-image: url("imagens/Mask.png");
+  background-repeat: no-repeat;
+  background-size: 960px;
+  background-position: right top;
+  font-family: 'Roboto';
+}
+

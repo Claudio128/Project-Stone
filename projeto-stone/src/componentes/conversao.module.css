@@ -1,0 +1,120 @@
+.container{
+    display: grid;
+    grid-template-columns: 120px 120px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-top: 150px;
+    margin-left: -415px;
+    flex-direction: column;
+}
+
+.container div {
+    margin-left: -50px;
+}
+
+.primeirop,
+.segundop,
+.terceirop{
+    display: flex;
+    justify-content: start;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2E3742;
+}
+
+.caixa,
+.caixa1 {
+    display: flex;
+    justify-content: start;
+    margin-top: -10px;
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #d7e0eb;
+    box-shadow: 0px 8px 4px 0px rgba(13, 17, 27, 0.08);
+    outline: none;
+}
+
+.caixa::-webkit-inner-spin-button,
+.caixa1::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.ponto{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    margin-left: 30px;
+}
+
+.compra{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.checkUm {
+    margin-left: 40px;
+}
+
+.checkUm,
+.checkDois{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8c9cad;
+    border-radius: 50%;
+    appearance: none;
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkDois::before,
+.checkUm::before{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #008B57;
+    content: '';
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.checkDois:checked:before,
+.checkUm:checked:before{
+    opacity: 1;
+}
+
+.checkUm:checked,
+.checkDois:checked{
+    border: 2px solid #008B57;
+}
+
+.converter {
+    margin-top: 25px;
+    float: left;
+    background-color: #8C9CAD;
+    color: #FFFFFF;
+    border: 1px solid #008B57;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 130px;
+    height: 45px;
+}
+
+.converter svg {
+    width: 20px;
+}
+
+.converter:disabled {
+    cursor: not-allowed;
+}
